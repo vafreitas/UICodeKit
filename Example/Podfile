@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 target 'UICodeKit_Example' do
   pod 'UICodeKit', :path => '../'
+  pod "TinyConstraints"
 
   target 'UICodeKit_Tests' do
     inherit! :search_paths

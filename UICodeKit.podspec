@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UICodeKit'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of UICodeKit.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Victor Freitas/UICodeKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/vafreitas/UICodeKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Victor Freitas' => 'tqi_valves@uolinc.com' }
+  s.author           = { 'Victor Freitas' => 'vitoralves59@gmail.com' }
   s.source           = { :git => 'https://github.com/Victor Freitas/UICodeKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'UICodeKit/Classes/**/*'
+  s.source           = { :git => 'https://github.com/vafreitas/UICodeKit.git', :tag => "#{s.version}" }
+  s.source_files = "Sources/**/*.{swift,h,m}"
   
-  # s.resource_bundles = {
-  #   'UICodeKit' => ['UICodeKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'TinyConstraints'
+   s.dependency 'AloeStackView'
 end

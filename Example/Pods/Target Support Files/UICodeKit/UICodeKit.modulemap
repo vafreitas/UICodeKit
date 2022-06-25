@@ -1,0 +1,6 @@
+framework module UICodeKit {
+  umbrella header "UICodeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
