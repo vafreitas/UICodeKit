@@ -75,7 +75,7 @@ open class Wrapper: UIView {
         case .centerY:
             view.centerYToSuperview(offset: spacing)
         case .right:
-            view.trailingToSuperview(offset: -spacing)
+            view.trailingToSuperview(offset: spacing)
         case .left:
             view.leadingToSuperview(offset: spacing)
         }
