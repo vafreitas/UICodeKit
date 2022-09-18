@@ -18,6 +18,39 @@ open class Wrapper: UIView {
         height(to: view)
     }
     
+    public init(_ views: [VStack], order: WrapperOrder, position: WrapperPositions, spacing: CGFloat = 0, align: WrapperAlignments = .centerY) {
+        super.init(frame: .zero)
+        for index in 0..<views.count {
+            addSubview(views[index])
+            alignOn(views[index], alignment: align)
+            
+            if index == 0 {
+                setPositionOf(views[index], position: position, spacing: spacing)
+            } else if index < views.count {
+                switch order {
+                case .topToBottom:
+                    if position == .left || position == .right || position == .centerX || position == .centerY {
+                        setPositionOf(views[index], position: position, spacing: spacing)
+                    }
+                    
+                    views[index].topToBottom(of: views[index - 1], offset: spacing)
+                    
+                case .bottomToTop:
+                    if position == .left || position == .right || position == .centerX || position == .centerY {
+                        setPositionOf(views[index], position: position, spacing: spacing)
+                    }
+                    
+                    views[index].bottomToTop(of: views[index - 1], offset: spacing)
+                    
+                case .rightToLeft:
+                    views[index].trailingToLeading(of:views[index - 1], offset: -spacing)
+                case .leftToRight:
+                    views[index].leadingToTrailing(of: views[index - 1], offset: spacing)
+                }
+            }
+        }
+    }
+    
     public init(_ views: [UIView], order: WrapperOrder, position: WrapperPositions, spacing: CGFloat = 0, align: WrapperAlignments = .centerY) {
         super.init(frame: .zero)
         for index in 0..<views.count {

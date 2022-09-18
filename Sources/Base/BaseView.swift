@@ -19,7 +19,7 @@ open class BaseView: UIView {
         }
         
         addSubview(body)
-        body.edgesToSuperview(usingSafeArea: true)
+        body.edgesToSuperview(relation: .equal)
         
         configureConstraints()
         backgroundColor = .white

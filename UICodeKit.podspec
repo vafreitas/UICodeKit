@@ -7,31 +7,30 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'UICodeKit'
-  s.version          = '1.0.0'
-  s.summary          = 'A short description of UICodeKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/vafreitas/UICodeKit'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Victor Freitas' => 'vitoralves59@gmail.com' }
-  s.source           = { :git => 'https://github.com/Victor Freitas/UICodeKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source           = { :git => 'https://github.com/vafreitas/UICodeKit.git', :tag => "#{s.version}" }
-  s.source_files = "Sources/**/*.{swift,h,m}"
-  
-   s.dependency 'TinyConstraints'
-   s.dependency 'AloeStackView'
+    s.name             = 'UICodeKit'
+    s.version          = '1.0.0'
+    s.summary          = 'The Elegant Swift View Code Framework.'
+    
+    # This description is used to generate tags and improve search results.
+    #   * Think: What does it do? Why did you write it? What is the focus?
+    #   * Try to keep it short, snappy and to the point.
+    #   * Write the description between the DESC delimiters below.
+    #   * Finally, don't worry about the indent, CocoaPods strips it!
+    
+    s.description      = <<-DESC
+    UICodeKit Help You to build simple or complex layouts in a just few steps.
+    DESC
+    
+    s.homepage         = 'https://github.com/vafreitas/UICodeKit'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'Victor Freitas' => 'vitoralves59@gmail.com' }
+    s.source           = { :git => 'https://github.com/vafreitas/UICodeKit.git', :tag => s.version.to_s }
+    
+    s.ios.deployment_target = '10.0'
+    s.swift_version = "5.5"
+    
+    s.source_files = "Sources/**/*.{swift,h,m}"
+    
+    s.dependency 'TinyConstraints'
+    s.dependency 'AloeStackView'
 end

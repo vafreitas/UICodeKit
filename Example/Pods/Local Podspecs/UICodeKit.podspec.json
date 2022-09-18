@@ -1,8 +1,8 @@
 {
   "name": "UICodeKit",
   "version": "1.0.0",
-  "summary": "A short description of UICodeKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "The Elegant Swift View Code Framework.",
+  "description": "UICodeKit Help You to build simple or complex layouts in a just few steps.",
   "homepage": "https://github.com/vafreitas/UICodeKit",
   "license": {
     "type": "MIT",
@@ -18,6 +18,7 @@
   "platforms": {
     "ios": "10.0"
   },
+  "swift_versions": "5.5",
   "source_files": "Sources/**/*.{swift,h,m}",
   "dependencies": {
     "TinyConstraints": [
@@ -26,5 +27,6 @@
     "AloeStackView": [
 
     ]
-  }
+  },
+  "swift_version": "5.5"
 }

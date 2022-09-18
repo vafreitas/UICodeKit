@@ -24,6 +24,7 @@
 		C32D8CD62867BCFF001A1708 /* AdvancedOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8CCB2867BCFF001A1708 /* AdvancedOperators.swift */; };
 		C32D8CD72867BCFF001A1708 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8CCD2867BCFF001A1708 /* BaseCell.swift */; };
 		C32D8CD82867BCFF001A1708 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8CCE2867BCFF001A1708 /* BaseView.swift */; };
+		C39B2F3F2868BB1000B9A4B4 /* HomeViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B2F3E2868BB1000B9A4B4 /* HomeViewOld.swift */; };
 		E872E4DC9EF516507A33D990 /* Pods_UICodeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9836AA4F958BB3D0A3367 /* Pods_UICodeKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		C32D8CCB2867BCFF001A1708 /* AdvancedOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedOperators.swift; sourceTree = "<group>"; };
 		C32D8CCD2867BCFF001A1708 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		C32D8CCE2867BCFF001A1708 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C39B2F3E2868BB1000B9A4B4 /* HomeViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewOld.swift; sourceTree = "<group>"; };
 		C7C31D6B3E041918008BB1BD /* Pods-UICodeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C8E3EBAF7F045636612D382B /* Pods-UICodeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				C30C178F2867B9E100F39C02 /* HomeView.swift */,
+				C39B2F3E2868BB1000B9A4B4 /* HomeViewOld.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				C32D8CD52867BCFF001A1708 /* VSpacer.swift in Sources */,
 				C32D8CD82867BCFF001A1708 /* BaseView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C39B2F3F2868BB1000B9A4B4 /* HomeViewOld.swift in Sources */,
 				C32D8CD62867BCFF001A1708 /* AdvancedOperators.swift in Sources */,
 				C32D8CCF2867BCFF001A1708 /* Wrapper.swift in Sources */,
 				C32D8CD72867BCFF001A1708 /* BaseCell.swift in Sources */,

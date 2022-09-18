@@ -781,7 +781,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10B5E6CEBF09930A063ADF48EFD2D2BC /* Release */ = {
+		0487C8069C53926FCF2E3D4109288036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF79C6620CC7D9A933DABFDE809D41E1 /* UICodeKit.release.xcconfig */;
 			buildSettings = {
@@ -805,13 +805,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		288AB53C1BC27F309E6E6683991B989D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780896245F0376C18D4A5EFABE2F7C5E /* UICodeKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICodeKit/UICodeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICodeKit/UICodeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICodeKit/UICodeKit.modulemap";
+				PRODUCT_MODULE_NAME = UICodeKit;
+				PRODUCT_NAME = UICodeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		4DA6A5462863E3E00E847EB18858C088 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1030,37 +1061,6 @@
 			};
 			name = Debug;
 		};
-		CB0AE2F84A306F4163D96A9307819D9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 780896245F0376C18D4A5EFABE2F7C5E /* UICodeKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UICodeKit/UICodeKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UICodeKit/UICodeKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UICodeKit/UICodeKit.modulemap";
-				PRODUCT_MODULE_NAME = UICodeKit;
-				PRODUCT_NAME = UICodeKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D16576DB3D7956DF7C2400013634D69B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8367C583BB12080C116FB792D6FCA04D /* Pods-UICodeKit_Example.release.xcconfig */;
@@ -1234,8 +1234,8 @@
 		0B2E00490F3EEC98BCEEF82CFDD447C5 /* Build configuration list for PBXNativeTarget "UICodeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB0AE2F84A306F4163D96A9307819D9E /* Debug */,
-				10B5E6CEBF09930A063ADF48EFD2D2BC /* Release */,
+				288AB53C1BC27F309E6E6683991B989D /* Debug */,
+				0487C8069C53926FCF2E3D4109288036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
