@@ -39,6 +39,7 @@
 		A433BF4812278957119C5703D5500740 /* AloeStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C4AE3A4AC04822058751DED1C54A1B /* AloeStackView-dummy.m */; };
 		AF45959FC866FD6D7A8E534E6EEB4A2F /* Pods-UICodeKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B4B20F71D5A44B8CB90040D1DF064 /* Pods-UICodeKit_Example-dummy.m */; };
 		BF75F7C3CE5DF53FDC340EB541B30224 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F59F4AA0BAB9067C842B7A4C0BD941B /* TinyEdgeInsets.swift */; };
+		C37A76DC28D77C7C00B0BD67 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A76DB28D77C7C00B0BD67 /* UIViewController+Extensions.swift */; };
 		C6F73E07E6340C83459CE0E0BCB8CD4F /* UICodeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B56B2AC3C01A6D0D5606BD56AFBD43 /* UICodeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD5F1D7DE5A00D7419F37E895FD3DB65 /* VTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBFB9397E7E27975D3EEBA59E75821 /* VTableView.swift */; };
 		D60E98A99AA9AFA7D72D3089119DC65E /* VScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC5974FCBFCC1931100BF72194515C /* VScroll.swift */; };
@@ -94,7 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0001F971D922295663EDB252BA3CDE2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0001F971D922295663EDB252BA3CDE2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0655A50F7969383E8D78FAE000DA5281 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
 		06D071ABD774F23298A9B50642D5FBEC /* Pods-UICodeKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UICodeKit_Example-Info.plist"; sourceTree = "<group>"; };
 		0BA63F5779C9BA792AD4652B379D0C62 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
@@ -110,7 +111,7 @@
 		31155ECBA4B33C49D42ECF2B7B1215BE /* Pods-UICodeKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UICodeKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3398323554A8F0F9B78521C8934202BF /* Wrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		353D6DA5A50D17EB1672B658D3BECF7C /* UICodeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICodeKit.modulemap; sourceTree = "<group>"; };
-		4CFFAF526D3DE9275F685025D5CFCFA1 /* UICodeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UICodeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4CFFAF526D3DE9275F685025D5CFCFA1 /* UICodeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = UICodeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D4D4CF04F6F1073ED1289AB1E598B47 /* HStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
 		51F19C446080A5BC13E8443D9651A4FD /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Sources/AloeStackView/Views/SeparatorView.swift; sourceTree = "<group>"; };
 		55CBFB9397E7E27975D3EEBA59E75821 /* VTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VTableView.swift; sourceTree = "<group>"; };
@@ -134,9 +135,9 @@
 		99AF3EF994A4151CB0C1D2F8712A3D21 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		9C9BD1B08C405C06DC61F86BAA0FFDC7 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
 		9D4877C67A1FED4653C99B6E8CE5CE67 /* Pods-UICodeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UICodeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD7F7636A14512E89B3848F86E11A91 /* AloeStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AloeStackView.modulemap; sourceTree = "<group>"; };
-		A16F4192D2F9578E9B397FDB9EB2103F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A16F4192D2F9578E9B397FDB9EB2103F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A456CA48979F87470244D9AA3B0E4EAC /* AloeStackView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AloeStackView; path = AloeStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F9170CB9658187136758C5ABC6C91E /* Pods-UICodeKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UICodeKit_Tests"; path = Pods_UICodeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99A6C91ABA173CB76B4D3A4DF702050 /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		BF40CE6859DFD681521743705BA24FEB /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
 		C0C9E5424AF941FA3C184128127CDD33 /* AloeStackView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AloeStackView-Info.plist"; sourceTree = "<group>"; };
 		C2E60067A33E2CAE7BAF97DA69FD9DA0 /* AloeStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AloeStackView.debug.xcconfig; sourceTree = "<group>"; };
+		C37A76DB28D77C7C00B0BD67 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		C7DE9126B7FE8A9FC0B48851DCBC851E /* AloeStackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AloeStackViewController.swift; path = Sources/AloeStackView/AloeStackViewController.swift; sourceTree = "<group>"; };
 		CA32B5F7A1827A751D721A6F7CDBE65B /* SeparatorHiding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorHiding.swift; path = Sources/AloeStackView/Protocols/SeparatorHiding.swift; sourceTree = "<group>"; };
 		D0A4813359CAB6EB222EFF82A68AFA47 /* StackViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackViewCell.swift; path = Sources/AloeStackView/Views/StackViewCell.swift; sourceTree = "<group>"; };
@@ -217,7 +219,6 @@
 			children = (
 				710B5CDB26C5B4B74FFF30FDF5B9C880 /* VStackModel.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -280,7 +281,6 @@
 				1F59F4AA0BAB9067C842B7A4C0BD941B /* TinyEdgeInsets.swift */,
 				A8AD355A24B639D03F81AFE62038B03C /* Support Files */,
 			);
-			name = TinyConstraints;
 			path = TinyConstraints;
 			sourceTree = "<group>";
 		};
@@ -299,7 +299,6 @@
 			children = (
 				AD4BC48EBF98AB57983F2C21570B5914 /* AdvancedOperators.swift */,
 			);
-			name = Operators;
 			path = Operators;
 			sourceTree = "<group>";
 		};
@@ -331,7 +330,6 @@
 				8611DCD340D40AA7421DE07CA27E4306 /* Tappable.swift */,
 				C038532CAEB82B993E6BB0648907D5BF /* Support Files */,
 			);
-			name = AloeStackView;
 			path = AloeStackView;
 			sourceTree = "<group>";
 		};
@@ -396,6 +394,14 @@
 			path = "../Target Support Files/AloeStackView";
 			sourceTree = "<group>";
 		};
+		C37A76DA28D77C7000B0BD67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C37A76DB28D77C7C00B0BD67 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C4BD3BA6B7938B57B85FE65F3BBB4CF0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +451,7 @@
 		D7E5B830072AB922190D3A3DDCF5DE0A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C37A76DA28D77C7000B0BD67 /* Extensions */,
 				7F5A86B1778F84D2012F6475EBAF8DAF /* Operators */,
 			);
 			name = Common;
@@ -683,6 +690,7 @@
 				A433BF4812278957119C5703D5500740 /* AloeStackView-dummy.m in Sources */,
 				554CA1D1C912AE432575645E1EB3DDCC /* AloeStackViewController.swift in Sources */,
 				89B2D5600B1A7B5A655E0E956CA6720B /* Highlightable.swift in Sources */,
+				C37A76DC28D77C7C00B0BD67 /* UIViewController+Extensions.swift in Sources */,
 				41BC8EDCC3F9A54F695592D72E31F1F0 /* SeparatorHiding.swift in Sources */,
 				3539AB8E865B56B0B3F8142B76617274 /* SeparatorView.swift in Sources */,
 				28D272C29256CB5A2B18D6A33B2D0A56 /* StackViewCell.swift in Sources */,
@@ -1024,8 +1032,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'UICodeKit'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'The Elegant Swift View Code Framework.'
     
     # This description is used to generate tags and improve search results.

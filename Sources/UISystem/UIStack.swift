@@ -1,32 +1,24 @@
 //
-//  VStack.swift
+//  HStack.swift
 //  Components
 //
-//  Created by Victor Freitas on 15/06/21.
+//  Created by Victor Freitas on 19/06/21.
 //
 
 import UIKit
-import TinyConstraints
 
-open class VStack: UIStackView {
-    public init (_ views: UIView...,
-                 spacing: CGFloat = 16,
-                 distribution: UIStackView.Distribution = .fill,
-                 alignment: UIStackView.Alignment = .fill,
-                 padding: [Padding] = []) {
+extension UIStack: UICodeViewProtocol {}
+
+open class UIStack: UIStackView {
+    public init(axis: NSLayoutConstraint.Axis, spacing: CGFloat = 16, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, @UICodeBuilder _ content: () -> UIView) {
         super.init(frame: .zero)
-        axis = .vertical
+        self.axis = axis
         self.spacing = spacing
         self.distribution = distribution
         self.alignment = alignment
         
         
-        views.forEach { [weak self] view in
-            guard let self = self else { return }
-            self.addArrangedSubview(view)
-        }
-        
-        setPadding(padding, for: .content)
+        content().subviews.forEach { addArrangedSubview($0) }
         isLayoutMarginsRelativeArrangement = true
     }
     
@@ -34,7 +26,7 @@ open class VStack: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setPadding(_ padding: [Padding], for type: PaddingType) {
+    public func padding(_ padding: Padding..., for type: PaddingType = .content) -> UIStack {
         var paddings = PaddingModel()
         
         padding.forEach { padding in
@@ -65,5 +57,7 @@ open class VStack: UIStackView {
         case .content:
             layoutMargins = .init(top: paddings.top, left: paddings.left, bottom: paddings.bottom, right: paddings.right)
         }
+        
+        return self
     }
 }

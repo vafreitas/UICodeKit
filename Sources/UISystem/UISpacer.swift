@@ -7,11 +7,12 @@
 
 import UIKit
 
-open class VSpacer: UIView {
-    
-    public init(height size: CGFloat) {
+open class UISpacer: UIView {
+    public init(minHeight size: CGFloat = 0) {
         super.init(frame: .zero)
-        height(size)
+        if size > 0 {
+            height(min: size)
+        }
     }
     
     required public init?(coder: NSCoder) {

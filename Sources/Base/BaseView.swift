@@ -48,5 +48,5 @@ open class BaseView: UIView {
     open func configureSubviews() {}
     open func configureConstraints() {}
     
-    open func body() -> UIView? { return nil }
+    open func body() -> UICodeView? { return nil }
 }

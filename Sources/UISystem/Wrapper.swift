@@ -18,7 +18,7 @@ open class Wrapper: UIView {
         height(to: view)
     }
     
-    public init(_ views: [VStack], order: WrapperOrder, position: WrapperPositions, spacing: CGFloat = 0, align: WrapperAlignments = .centerY) {
+    public init(_ views: [UIStack], order: WrapperOrder, position: WrapperPositions, spacing: CGFloat = 0, align: WrapperAlignments = .centerY) {
         super.init(frame: .zero)
         for index in 0..<views.count {
             addSubview(views[index])
