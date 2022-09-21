@@ -8,7 +8,7 @@ Simple, Fast and Easy.
 
 ## Introduction
 
-VFNetwork is a protocol-oriented network layer that will help you assemble your requests in just a few steps.
+UICodeKit is a Viewcode alternative to help you assemble your controllers in just a few steps.
 
 ## How to use
 
