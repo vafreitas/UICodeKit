@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'UICodeKit'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'The Elegant Swift View Code Framework.'
     
     # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Victor Freitas' => 'vitoralves59@gmail.com' }
     s.source           = { :git => 'https://github.com/vafreitas/UICodeKit.git', :tag => s.version.to_s }
     
-    s.ios.deployment_target = '10.0'
+    s.ios.deployment_target = '12.0'
     s.swift_version = "5.5"
     
     s.source_files = "Sources/**/*.{swift,h,m}"
