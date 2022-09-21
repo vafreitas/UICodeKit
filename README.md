@@ -14,9 +14,11 @@ UICodeKit is a Viewcode alternative to help you assemble your controllers in jus
 
 Basically you just need to follow like this example below.
 
-### LoginView.swift
+### You get with code below
 
-Here you will configure your requests.
+<img src="https://github.com/vafreitas/UICodeKit/blob/master/Images/login.png" width="300px"/>
+
+### LoginView.swift
 
 ```swift
 
@@ -34,20 +36,20 @@ class LoginView: BaseView {
     }
     
     lazy var usernameTextField = UITextField() .. {
-        $0.placeholder = "Usuário"
+        $0.placeholder = "Username"
         $0.borderStyle = .roundedRect
         $0.height(40)
     }
     
     lazy var passwordTextField = UITextField() .. {
-        $0.placeholder = "Senha"
+        $0.placeholder = "Password"
         $0.isSecureTextEntry = true
         $0.borderStyle = .roundedRect
         $0.height(40)
     }
     
     lazy var enterButton = UIButton() .. {
-        $0.setTitle("Entrar", for: .normal)
+        $0.setTitle("Sign In", for: .normal)
         $0.backgroundColor = .systemBlue
         $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 18)
@@ -58,7 +60,7 @@ class LoginView: BaseView {
     }
     
     lazy var forgotButton = UIButton() .. {
-        $0.setTitle("Esqueci minha senha", for: .normal)
+        $0.setTitle("Reset my password", for: .normal)
         $0.setTitleColor(.systemBlue, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.layer.cornerRadius = 24
