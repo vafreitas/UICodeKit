@@ -14,6 +14,10 @@ public struct UICodeBuilder {
         components.forEach { view.addSubview($0) }
         return view
     }
+    
+    public static func buildFinalResult(_ component: UIView) -> UIView {
+        component
+    }
 }
 
 public protocol UICodeViewProtocol: UIView {}

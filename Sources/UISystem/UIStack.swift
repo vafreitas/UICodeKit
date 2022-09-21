@@ -7,19 +7,23 @@
 
 import UIKit
 
-extension UIStack: UICodeViewProtocol {}
-
-open class UIStack: UIStackView {
+open class UIStack: UICodeView {
+    private var stackView: UIStackView
+    
     public init(axis: NSLayoutConstraint.Axis, spacing: CGFloat = 16, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, @UICodeBuilder _ content: () -> UIView) {
+        stackView = UIStackView()
         super.init(frame: .zero)
-        self.axis = axis
-        self.spacing = spacing
-        self.distribution = distribution
-        self.alignment = alignment
         
+        stackView.axis = axis
+        stackView.spacing = spacing
+        stackView.distribution = distribution
+        stackView.alignment = alignment
         
-        content().subviews.forEach { addArrangedSubview($0) }
-        isLayoutMarginsRelativeArrangement = true
+        content().subviews.forEach { stackView.addArrangedSubview($0) }
+        stackView.isLayoutMarginsRelativeArrangement = true
+        
+        addSubview(stackView)
+        stackView.edgesToSuperview(usingSafeArea: false)
     }
     
     required public init(coder: NSCoder) {
@@ -55,7 +59,7 @@ open class UIStack: UIStackView {
         
         switch type {
         case .content:
-            layoutMargins = .init(top: paddings.top, left: paddings.left, bottom: paddings.bottom, right: paddings.right)
+            stackView.layoutMargins = .init(top: paddings.top, left: paddings.left, bottom: paddings.bottom, right: paddings.right)
         }
         
         return self

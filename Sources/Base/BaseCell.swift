@@ -7,9 +7,10 @@
 
 import UIKit
 
-open class BaseCell: UITableViewCell {
-    public init() {
-        super.init(style: .default, reuseIdentifier: "")
+open class BaseCollectionViewCell: UICollectionViewCell {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
         configureSubviews()
         
         guard let body = body() else {
@@ -21,7 +22,6 @@ open class BaseCell: UITableViewCell {
         
         configureConstraints()
         backgroundColor = .white
-        separatorInset = .left(40)
     }
     
     @available(*, unavailable)
@@ -32,5 +32,32 @@ open class BaseCell: UITableViewCell {
     open func configureSubviews() {}
     open func configureConstraints() {}
     
-    open func body() -> UIView? { return nil }
+    open func body() -> UICodeView? { return nil }
+}
+
+open class BaseTableViewCell: UITableViewCell {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        configureSubviews()
+        
+        guard let body = body() else {
+            return
+        }
+        
+        addSubview(body)
+        body.edgesToSuperview(usingSafeArea: true)
+        
+        configureConstraints()
+        backgroundColor = .white
+    }
+
+    @available(*, unavailable)
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    open func configureSubviews() {}
+    open func configureConstraints() {}
+    
+    open func body() -> UICodeView? { return nil }
 }
