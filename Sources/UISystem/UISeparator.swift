@@ -5,7 +5,7 @@
 //  Created by Victor Alves de Freitas on 20/09/22.
 //
 
-import Foundation
+import UIKit
 
 open class UISeparator: BaseView {
     private let view = UIView() .. {

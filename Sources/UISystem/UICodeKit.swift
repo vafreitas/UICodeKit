@@ -5,7 +5,7 @@
 //  Created by Victor Alves de Freitas on 18/09/22.
 //
 
-import Foundation
+import UIKit
 
 @resultBuilder
 public struct UICodeBuilder {
