@@ -23,6 +23,9 @@
 		C34505F928DAA4F4005F162D /* VStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34505F128DAA4F4005F162D /* VStackModel.swift */; };
 		C34505FA28DAA4F4005F162D /* UISeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34505F228DAA4F4005F162D /* UISeparator.swift */; };
 		C34505FB28DAA4F4005F162D /* UIStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34505F328DAA4F4005F162D /* UIStack.swift */; };
+		C38D7F6D29CA94BE00FA8421 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D7F6C29CA94BE00FA8421 /* HomeController.swift */; };
+		C38D7F7129CA94E900FA8421 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D7F7029CA94E900FA8421 /* HomeView.swift */; };
+		C3FE7F5229CA9ADD00A0677B /* HomeViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE7F5129CA9ADD00A0677B /* HomeViewNew.swift */; };
 		E872E4DC9EF516507A33D990 /* Pods_UICodeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9836AA4F958BB3D0A3367 /* Pods_UICodeKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		C34505F128DAA4F4005F162D /* VStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStackModel.swift; sourceTree = "<group>"; };
 		C34505F228DAA4F4005F162D /* UISeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISeparator.swift; sourceTree = "<group>"; };
 		C34505F328DAA4F4005F162D /* UIStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStack.swift; sourceTree = "<group>"; };
+		C38D7F6C29CA94BE00FA8421 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		C38D7F7029CA94E900FA8421 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C3FE7F5129CA9ADD00A0677B /* HomeViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNew.swift; sourceTree = "<group>"; };
 		C7C31D6B3E041918008BB1BD /* Pods-UICodeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C8E3EBAF7F045636612D382B /* Pods-UICodeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +186,8 @@
 		C30C178E2867B9CD00F39C02 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				C38D7F6F29CA94DF00FA8421 /* View */,
+				C38D7F6E29CA94D800FA8421 /* Controller */,
 			);
 			name = Sections;
 			sourceTree = "<group>";
@@ -257,6 +265,23 @@
 				C34505F128DAA4F4005F162D /* VStackModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C38D7F6E29CA94D800FA8421 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C38D7F6C29CA94BE00FA8421 /* HomeController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C38D7F6F29CA94DF00FA8421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C38D7F7029CA94E900FA8421 /* HomeView.swift */,
+				C3FE7F5129CA9ADD00A0677B /* HomeViewNew.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,11 +460,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34505F728DAA4F4005F162D /* UIList.swift in Sources */,
+				C38D7F7129CA94E900FA8421 /* HomeView.swift in Sources */,
 				C32D8CD82867BCFF001A1708 /* BaseView.swift in Sources */,
 				C34505F928DAA4F4005F162D /* VStackModel.swift in Sources */,
 				C34505F428DAA4F4005F162D /* Wrapper.swift in Sources */,
 				C34505F828DAA4F4005F162D /* UICodeKit.swift in Sources */,
 				C34505F628DAA4F4005F162D /* UIScroll.swift in Sources */,
+				C3FE7F5229CA9ADD00A0677B /* HomeViewNew.swift in Sources */,
+				C38D7F6D29CA94BE00FA8421 /* HomeController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				C34505F528DAA4F4005F162D /* UISpacer.swift in Sources */,
 				C32D8CD62867BCFF001A1708 /* AdvancedOperators.swift in Sources */,
@@ -584,6 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICodeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -599,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICodeKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -621,6 +651,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,6 +670,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
