@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		79FEB7ACEBFA6B16D389A411 /* Pods_UICodeKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2481975F8622B81CEA5E5B03 /* Pods_UICodeKit_Tests.framework */; };
 		C32D8CD62867BCFF001A1708 /* AdvancedOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8CCB2867BCFF001A1708 /* AdvancedOperators.swift */; };
@@ -24,6 +21,11 @@
 		C34505FA28DAA4F4005F162D /* UISeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34505F228DAA4F4005F162D /* UISeparator.swift */; };
 		C34505FB28DAA4F4005F162D /* UIStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34505F328DAA4F4005F162D /* UIStack.swift */; };
 		E872E4DC9EF516507A33D990 /* Pods_UICodeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9836AA4F958BB3D0A3367 /* Pods_UICodeKit_Example.framework */; };
+		F618E11C29DC9E7B00436DE3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11B29DC9E7B00436DE3 /* HomeController.swift */; };
+		F618E11E29DC9E8100436DE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11D29DC9E8100436DE3 /* HomeView.swift */; };
+		F6E4E24129DC9CE300995420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4E23A29DC9CE200995420 /* AppDelegate.swift */; };
+		F6E4E24229DC9CE300995420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23C29DC9CE300995420 /* Images.xcassets */; };
+		F6E4E24329DC9CE300995420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23E29DC9CE300995420 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +45,6 @@
 		43A9836AA4F958BB3D0A3367 /* Pods_UICodeKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICodeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		566A53939506B14F5C6552AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UICodeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICodeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* UICodeKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICodeKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -65,6 +63,12 @@
 		C34505F328DAA4F4005F162D /* UIStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStack.swift; sourceTree = "<group>"; };
 		C7C31D6B3E041918008BB1BD /* Pods-UICodeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C8E3EBAF7F045636612D382B /* Pods-UICodeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F618E11B29DC9E7B00436DE3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F618E11D29DC9E8100436DE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F6E4E23A29DC9CE200995420 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6E4E23C29DC9CE300995420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6E4E23F29DC9CE300995420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F6E4E24029DC9CE300995420 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,22 +136,13 @@
 		607FACD21AFB9204008FA782 /* Example for UICodeKit */ = {
 			isa = PBXGroup;
 			children = (
-				C30C17932867BA0A00F39C02 /* Resources */,
-				C30C17922867B9F000F39C02 /* Delegate */,
-				C30C178E2867B9CD00F39C02 /* Sections */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				F6E4E23929DC9CE200995420 /* Delegate */,
+				F6E4E23B29DC9CE300995420 /* Resources */,
+				F6E4E23D29DC9CE300995420 /* SupportingFiles */,
+				F6E4E23529DC9C9B00995420 /* Sections */,
 			);
 			name = "Example for UICodeKit";
 			path = UICodeKit;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -175,29 +170,6 @@
 				566A53939506B14F5C6552AA /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		C30C178E2867B9CD00F39C02 /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Sections;
-			sourceTree = "<group>";
-		};
-		C30C17922867B9F000F39C02 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-			);
-			name = Delegate;
-			sourceTree = "<group>";
-		};
-		C30C17932867BA0A00F39C02 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C32D8CBF2867BCFF001A1708 /* Sources */ = {
@@ -257,6 +229,64 @@
 				C34505F128DAA4F4005F162D /* VStackModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F618E11829DC9E6B00436DE3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F618E11A29DC9E7100436DE3 /* Controller */,
+				F618E11929DC9E6E00436DE3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F618E11929DC9E6E00436DE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F618E11D29DC9E8100436DE3 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F618E11A29DC9E7100436DE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F618E11B29DC9E7B00436DE3 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F6E4E23529DC9C9B00995420 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				F618E11829DC9E6B00436DE3 /* Home */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		F6E4E23929DC9CE200995420 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4E23A29DC9CE200995420 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F6E4E23B29DC9CE300995420 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4E23C29DC9CE300995420 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F6E4E23D29DC9CE300995420 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4E24029DC9CE300995420 /* Info.plist */,
+				F6E4E23E29DC9CE300995420 /* LaunchScreen.xib */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F6E4E24329DC9CE300995420 /* LaunchScreen.xib in Resources */,
+				F6E4E24229DC9CE300995420 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,13 +464,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E4E24129DC9CE300995420 /* AppDelegate.swift in Sources */,
+				F618E11E29DC9E8100436DE3 /* HomeView.swift in Sources */,
 				C34505F728DAA4F4005F162D /* UIList.swift in Sources */,
 				C32D8CD82867BCFF001A1708 /* BaseView.swift in Sources */,
 				C34505F928DAA4F4005F162D /* VStackModel.swift in Sources */,
 				C34505F428DAA4F4005F162D /* Wrapper.swift in Sources */,
 				C34505F828DAA4F4005F162D /* UICodeKit.swift in Sources */,
+				F618E11C29DC9E7B00436DE3 /* HomeController.swift in Sources */,
 				C34505F628DAA4F4005F162D /* UIScroll.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				C34505F528DAA4F4005F162D /* UISpacer.swift in Sources */,
 				C32D8CD62867BCFF001A1708 /* AdvancedOperators.swift in Sources */,
 				C32D8CD72867BCFF001A1708 /* BaseCell.swift in Sources */,
@@ -468,10 +500,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		F6E4E23E29DC9CE300995420 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				F6E4E23F29DC9CE300995420 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -524,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -570,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -583,7 +615,7 @@
 			baseConfigurationReference = 082AAA86C819D5FC0000E5C9 /* Pods-UICodeKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UICodeKit/Info.plist;
+				INFOPLIST_FILE = UICodeKit/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -598,7 +630,7 @@
 			baseConfigurationReference = C12774FB74C35869274BE0E5 /* Pods-UICodeKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UICodeKit/Info.plist;
+				INFOPLIST_FILE = UICodeKit/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
