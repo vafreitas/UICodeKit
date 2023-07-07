@@ -8,7 +8,14 @@
 import UIKit
 import TinyConstraints
 
-open class Wrapper: UIView {
+open class Wrapper: UICodeView {
+    
+    public init (@UICodeBuilder _ content: () -> UIView) {
+        super.init(frame: .zero)
+        let subview = content().subviews.first ?? UIView()
+        addSubview(subview)
+        height(to: subview)
+    }
     
     public init(_ view: UIView, position: WrapperPositions, offset: CGFloat = 0, align: WrapperAlignments = .centerY) {
         super.init(frame: .zero)
@@ -112,6 +119,23 @@ open class Wrapper: UIView {
         case .left:
             view.leadingToSuperview(offset: spacing)
         }
+    }
+    
+    // MARK: Builder Methods
+    
+    public func setHeight(_ size: CGFloat) -> Wrapper {
+        height(size)
+        return self
+    }
+    
+    public func setMaxHeight(_ size: CGFloat) -> Wrapper {
+        height(min: 0, max: size)
+        return self
+    }
+    
+    public func position(_ position: WrapperPositions) -> Wrapper {
+        setPositionOf(self.subviews.first ?? UIView(), position: position, spacing: 0)
+        return self
     }
     
     required public init?(coder: NSCoder) {

@@ -1,7 +1,7 @@
 {
   "name": "UICodeKit",
-  "version": "1.0.2",
-  "summary": "The Elegant Swift View Code Framework.",
+  "version": "1.0.4",
+  "summary": "The Elegant Swift UIKit View Code Framework.",
   "description": "UICodeKit Help You to build simple or complex layouts in a just few steps.",
   "homepage": "https://github.com/vafreitas/UICodeKit",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/vafreitas/UICodeKit.git",
-    "tag": "1.0.2"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "12.0"
