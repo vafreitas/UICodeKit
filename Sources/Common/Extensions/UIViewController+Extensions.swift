@@ -8,6 +8,8 @@
 import UIKit
 import SwiftUI
 
+public typealias UICodeDefaultAction = (() -> Void)
+
 @available(iOS 13, *)
 extension UIViewController {
     private struct Preview: UIViewControllerRepresentable {

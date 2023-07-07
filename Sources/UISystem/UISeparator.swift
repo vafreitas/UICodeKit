@@ -9,8 +9,8 @@ import UIKit
 
 open class UISeparator: BaseView {
     private let view = UIView() .. {
-        $0.backgroundColor = .lightGray
-        $0.height(1)
+        $0.backgroundColor = .lightGray.withAlphaComponent(0.5)
+        $0.height(0.4)
     }
     
     open override func body() -> UICodeView? {

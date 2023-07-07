@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
     s.name             = 'UICodeKit'
-    s.version          = '1.0.3'
-    s.summary          = 'The Elegant Swift View Code Framework.'
+    s.version          = '1.0.4'
+    s.summary          = 'The Elegant Swift UIKit View Code Framework.'
     
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?

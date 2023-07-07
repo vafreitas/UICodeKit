@@ -26,8 +26,8 @@ class HomeController: UIViewController {
     // MARK: Actions
     
     func registerActions() {
-        rootView.loginTapped = {
-            print("Loggin Tapped!")
+        rootView.createAccountAction = {
+            print("Create Account Tapped!")
         }
     }
 }
