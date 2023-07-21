@@ -179,9 +179,7 @@
 		C32D8CBF2867BCFF001A1708 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C34505EA28DAA4F4005F162D /* UISystem */,
-				C32D8CC92867BCFF001A1708 /* Common */,
-				C32D8CCC2867BCFF001A1708 /* Base */,
+				F63C8EE62A6A0845005569BC /* UICodeKit */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -267,6 +265,16 @@
 				F63C8EE32A6A0706005569BC /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F63C8EE62A6A0845005569BC /* UICodeKit */ = {
+			isa = PBXGroup;
+			children = (
+				C34505EA28DAA4F4005F162D /* UISystem */,
+				C32D8CC92867BCFF001A1708 /* Common */,
+				C32D8CCC2867BCFF001A1708 /* Base */,
+			);
+			path = UICodeKit;
 			sourceTree = "<group>";
 		};
 		F6E4E23529DC9C9B00995420 /* Sections */ = {
