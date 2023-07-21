@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		F618E11C29DC9E7B00436DE3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11B29DC9E7B00436DE3 /* HomeController.swift */; };
 		F618E11E29DC9E8100436DE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11D29DC9E8100436DE3 /* HomeView.swift */; };
 		F63C8EE42A6A0706005569BC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C8EE32A6A0706005569BC /* UIViewController+Extensions.swift */; };
+		F6816B942A6A0D73006DF352 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = F6816B932A6A0D73006DF352 /* TinyConstraints */; };
+		F6816B972A6A0E32006DF352 /* AloeStackView in Frameworks */ = {isa = PBXBuildFile; productRef = F6816B962A6A0E32006DF352 /* AloeStackView */; };
 		F6E4E24129DC9CE300995420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4E23A29DC9CE200995420 /* AppDelegate.swift */; };
 		F6E4E24229DC9CE300995420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23C29DC9CE300995420 /* Images.xcassets */; };
 		F6E4E24329DC9CE300995420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23E29DC9CE300995420 /* LaunchScreen.xib */; };
@@ -80,6 +82,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E872E4DC9EF516507A33D990 /* Pods_UICodeKit_Example.framework in Frameworks */,
+				F6816B942A6A0D73006DF352 /* TinyConstraints in Frameworks */,
+				F6816B972A6A0E32006DF352 /* AloeStackView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,10 @@
 			dependencies = (
 			);
 			name = UICodeKit_Example;
+			packageProductDependencies = (
+				F6816B932A6A0D73006DF352 /* TinyConstraints */,
+				F6816B962A6A0E32006DF352 /* AloeStackView */,
+			);
 			productName = UICodeKit;
 			productReference = 607FACD01AFB9204008FA782 /* UICodeKit_Example.app */;
 			productType = "com.apple.product-type.application";
@@ -382,6 +390,10 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				F6816B922A6A0D73006DF352 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				F6816B952A6A0E31006DF352 /* XCRemoteSwiftPackageReference "AloeStackView" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -627,7 +639,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -638,7 +651,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICodeKit/SupportingFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,7 +669,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICodeKit/SupportingFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -675,7 +694,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -693,7 +716,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -733,6 +760,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6816B922A6A0D73006DF352 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		F6816B952A6A0E31006DF352 /* XCRemoteSwiftPackageReference "AloeStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marlimox/AloeStackView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6816B932A6A0D73006DF352 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6816B922A6A0D73006DF352 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+		F6816B962A6A0E32006DF352 /* AloeStackView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6816B952A6A0E31006DF352 /* XCRemoteSwiftPackageReference "AloeStackView" */;
+			productName = AloeStackView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -9,11 +9,14 @@ let package = Package(
     products: [
         .library(name: "UICodeKit", targets: ["UICodeKit"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/roberthein/TinyConstraints", from: "4.0.2"),
+        .package(url: "https://github.com/marlimox/AloeStackView", from: "1.2.0")
+    ],
     targets: [
         .target(
             name: "UICodeKit",
-            dependencies: [],
+            dependencies: ["TinyConstraints", "AloeStackView"],
             path: "Sources")
     ]
 )
