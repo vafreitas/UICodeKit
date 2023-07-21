@@ -19,7 +19,7 @@
     "ios": "12.0"
   },
   "swift_versions": "5.5",
-  "source_files": "Sources/**/*.{swift,h,m}",
+  "source_files": "Sources/UICodeKit/**/*.{swift,h,m}",
   "dependencies": {
     "TinyConstraints": [
 
