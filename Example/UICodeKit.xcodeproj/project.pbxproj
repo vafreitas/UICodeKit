@@ -23,6 +23,7 @@
 		E872E4DC9EF516507A33D990 /* Pods_UICodeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9836AA4F958BB3D0A3367 /* Pods_UICodeKit_Example.framework */; };
 		F618E11C29DC9E7B00436DE3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11B29DC9E7B00436DE3 /* HomeController.swift */; };
 		F618E11E29DC9E8100436DE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618E11D29DC9E8100436DE3 /* HomeView.swift */; };
+		F63C8EE42A6A0706005569BC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C8EE32A6A0706005569BC /* UIViewController+Extensions.swift */; };
 		F6E4E24129DC9CE300995420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4E23A29DC9CE200995420 /* AppDelegate.swift */; };
 		F6E4E24229DC9CE300995420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23C29DC9CE300995420 /* Images.xcassets */; };
 		F6E4E24329DC9CE300995420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E4E23E29DC9CE300995420 /* LaunchScreen.xib */; };
@@ -65,6 +66,8 @@
 		C8E3EBAF7F045636612D382B /* Pods-UICodeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICodeKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UICodeKit_Tests/Pods-UICodeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F618E11B29DC9E7B00436DE3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F618E11D29DC9E8100436DE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F63C8EE32A6A0706005569BC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F63C8EE52A6A0777005569BC /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		F6E4E23A29DC9CE200995420 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E4E23C29DC9CE300995420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6E4E23F29DC9CE300995420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				F63C8EE52A6A0777005569BC /* Package.swift */,
 				C32D8CBF2867BCFF001A1708 /* Sources */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for UICodeKit */,
@@ -186,6 +190,7 @@
 		C32D8CC92867BCFF001A1708 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F63C8EE22A6A0706005569BC /* Extensions */,
 				C32D8CCA2867BCFF001A1708 /* Operators */,
 			);
 			path = Common;
@@ -254,6 +259,14 @@
 				F618E11B29DC9E7B00436DE3 /* HomeController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F63C8EE22A6A0706005569BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F63C8EE32A6A0706005569BC /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F6E4E23529DC9C9B00995420 /* Sections */ = {
@@ -471,6 +484,7 @@
 				C34505F928DAA4F4005F162D /* VStackModel.swift in Sources */,
 				C34505F428DAA4F4005F162D /* Wrapper.swift in Sources */,
 				C34505F828DAA4F4005F162D /* UICodeKit.swift in Sources */,
+				F63C8EE42A6A0706005569BC /* UIViewController+Extensions.swift in Sources */,
 				F618E11C29DC9E7B00436DE3 /* HomeController.swift in Sources */,
 				C34505F628DAA4F4005F162D /* UIScroll.swift in Sources */,
 				C34505F528DAA4F4005F162D /* UISpacer.swift in Sources */,
