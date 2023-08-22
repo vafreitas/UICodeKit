@@ -22,6 +22,6 @@ public struct UICodeBuilder {
 
 public protocol UICodeViewProtocol: UIView {}
 
-public typealias UICodeView = UIView & UICodeViewProtocol
+public typealias UICodeView = UIView
 
 

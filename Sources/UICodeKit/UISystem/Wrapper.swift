@@ -123,16 +123,6 @@ open class Wrapper: UICodeView {
     
     // MARK: Builder Methods
     
-    public func setHeight(_ size: CGFloat) -> Wrapper {
-        height(size)
-        return self
-    }
-    
-    public func setMaxHeight(_ size: CGFloat) -> Wrapper {
-        height(min: 0, max: size)
-        return self
-    }
-    
     public func position(_ position: WrapperPositions) -> Wrapper {
         setPositionOf(self.subviews.first ?? UIView(), position: position, spacing: 0)
         return self
