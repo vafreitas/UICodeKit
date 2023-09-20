@@ -8,9 +8,9 @@
 
 import UIKit
 import SwiftUI
-import UICodeKit
 
 class HomeView: UIView {
+    
     lazy var label: UILabel = {
         var label = UILabel()
         label.text = "Olá, Mundo!"
@@ -45,8 +45,4 @@ class HomeView: UIView {
     }
 }
 
-struct HomeController_Previews2: PreviewProvider {
-    static var previews: some View {
-        HomeController().toPreview()
-    }
-}
+
