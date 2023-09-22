@@ -8,6 +8,33 @@
 import UIKit
 import TinyConstraints
 
+open class UIComponent: UICodeView {
+    
+    var subview: UIView = .init()
+    
+    public init (
+        background: UIColor = .white,
+        @UICodeBuilder _ content: () -> UIView) {
+            super.init(frame: .zero)
+            backgroundColor = background
+            
+            self.subview = content().subviews.first ?? UIView()
+            addSubview(subview)
+            
+            self.subview.centerXToSuperview()
+            self.subview.centerYToSuperview()
+        }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func sizePreview(height h: CGFloat = 0, width w: CGFloat = 0) -> UIComponent {
+        _ = subview.size(height: h, width: w)
+        return self
+    }
+}
+
 open class Wrapper: UICodeView {
     
     public init (@UICodeBuilder _ content: () -> UIView) {

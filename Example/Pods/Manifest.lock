@@ -6,7 +6,6 @@ PODS:
     - TinyConstraints
 
 DEPENDENCIES:
-  - TinyConstraints
   - UICodeKit (from `../`)
 
 SPEC REPOS:
@@ -23,6 +22,6 @@ SPEC CHECKSUMS:
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
   UICodeKit: 38a3a99686dd6af25aae160e630288233339806c
 
-PODFILE CHECKSUM: 2fd9c23a5807d0a2d0aedc1ec11630a9d18e964c
+PODFILE CHECKSUM: 53c4f1e601c32872a3456dbc25eac22c0f16eead
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

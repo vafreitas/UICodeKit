@@ -8,6 +8,38 @@
 
 import UIKit
 import TinyConstraints
+import SwiftUI
+
+@available(iOS 13, *)
+protocol UIKitViewRepresentable: UIViewRepresentable where UIViewType: UIView {
+    func makeUIView(context: Context) -> UIViewType
+    func updateUIView(_ uiView: UIViewType, context: Context)
+}
+
+@available(iOS 13, *)
+struct GenericUIKitView<Content>: View where Content: UIView {
+    let content: Content
+
+    init(@UICodeBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    var body: some View {
+        UIKitView(content: content)
+    }
+
+    private struct UIKitView: UIViewRepresentable {
+        let content: Content
+
+        func makeUIView(context: Context) -> Content {
+            return content
+        }
+
+        func updateUIView(_ uiView: Content, context: Context) {
+            // Atualize a visualização UIKit aqui, se necessário
+        }
+    }
+}
 
 extension UICodeView {
     public func padding(_ padding: Padding..., for type: PaddingType = .content) -> UICodeView {
@@ -54,13 +86,49 @@ extension UICodeView {
         return subview
     }
     
+    // MARK: Deprecated
+    
+    @available(*, deprecated, message: "This will be removed soon; please migrate to size(height:_ , width: _)")
     public func setHeight(_ size: CGFloat) -> UICodeView {
         height(size)
         return self
     }
     
+    @available(*, deprecated, message: "This will be removed soon; please migrate to max(height:_ , width: _)")
     public func setMaxHeight(_ size: CGFloat) -> UICodeView {
         height(min: 0, max: size)
+        return self
+    }
+    
+    // MARK: Newest Size Functions
+    
+    public func size(height h: CGFloat = 0, width w: CGFloat = 0) -> UICodeView {
+        if h != 0 { height(h) }
+        if w != 0 { width(w) }
+        return self
+    }
+    
+    public func max(height h: CGFloat = 0, width w: CGFloat = 0) -> UICodeView {
+        if h != 0 { height(min: 0, max: h) }
+        if w != 0 { width(min: 0, max: w) }
+        return self
+    }
+    
+    // MARK: Newest Layer Functions
+    
+    public func radius(_ size: CGFloat) -> UICodeView {
+        layer.cornerRadius = size
+        return self
+    }
+    
+    public func border(_ size: CGFloat, color: UIColor = .gray.withAlphaComponent(0.3)) -> UICodeView {
+        layer.borderWidth = size
+        layer.borderColor = color.cgColor
+        return self
+    }
+    
+    public func background(color: UIColor) -> UICodeView {
+        backgroundColor = color
         return self
     }
 }

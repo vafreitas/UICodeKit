@@ -16,110 +16,47 @@ class HomeView: BaseView {
     
     // MARK: Properties
     
-    lazy var titleLabel = UILabel() .. {
-        $0.text = "Create an account"
-        $0.font = .systemFont(ofSize: 26, weight: .heavy)
+    // Statistics
+    
+    lazy var cardStatisticsTitleLabel = UILabel() .. {
+        $0.text = "Statistics"
+        $0.font = .systemFont(ofSize: 22, weight: .medium)
     }
     
-    lazy var usernameTextField = UITextField() .. {
-        $0.placeholder = "Email Address"
-        $0.backgroundColor = .white
-        $0.layer.cornerRadius = 6
-        $0.height(40)
-        $0.setLeftPaddingPoints(12)
+    lazy var cardStatisticsMonthLabel = UILabel() .. {
+        $0.text = "this month"
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.textAlignment = .right
     }
     
-    lazy var passwordTextField = UITextField() .. {
-        $0.placeholder = "Password"
-        $0.isSecureTextEntry = true
-        $0.backgroundColor = .white
-        $0.height(40)
-        $0.setLeftPaddingPoints(12)
-    }
-    
-    lazy var enterButton = UIButton() .. {
-        $0.setTitle("Create an Account", for: .normal)
-        $0.backgroundColor = .systemBlue
-        $0.setTitleColor(.white, for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 18, weight: .medium)
-        $0.layer.cornerRadius = 10
-        $0.height(50)
+    lazy var cardStatistics = UIStack(axis: .vertical) {
+        UIStack(axis: .vertical) {
+            UIStack(axis: .horizontal) {
+                cardStatisticsTitleLabel
+                cardStatisticsMonthLabel
+            }
+        }
+        .padding(.horizontal(16))
         
-        $0.addTarget(self, action: #selector(createAccountTapped), for: .touchUpInside)
-    }
-    
-    lazy var forgotButton = UIButton() .. {
-        $0.setTitle("Already have an account?", for: .normal)
-        $0.setTitleColor(.systemGray, for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 16)
-        $0.layer.cornerRadius = 24
-        $0.height(48)
     }
     
     // MARK: Body
     
     override func body() -> UICodeView? {
         UIStack(axis: .vertical) {
-            Wrapper {
-                titleLabel
-            }
-            .position(.centerX)
-            .setHeight(50)
+            CardHeaderView()
             
-            UIStack(axis: .vertical) {
-                usernameTextField
-                passwordTextField
-            }
-            .padding(.bottom(18), .top(30))
-            
-            UIStack(axis: .vertical, spacing: 12) {
-                enterButton
-                forgotButton
-            }
-            
-            UISeparator()
-            
-            UIStack(axis: .vertical) {
-                UIButton(type: .system) .. {
-                    $0.setTitleColor(.black, for: .normal)
-                    $0.setTitle("Continue with Google", for: .normal)
-                    $0.backgroundColor = .white
-                    $0.height(50)
-                    $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
-                    $0.layer.cornerRadius = 10
-                }
-                
-                UIButton(type: .system) .. {
-                    $0.setTitleColor(.black, for: .normal)
-                    $0.setTitle("Continue with Facebook", for: .normal)
-                    $0.backgroundColor = .white
-                    $0.height(50)
-                    $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
-                    $0.layer.cornerRadius = 10
-                }
-                
-                UIButton(type: .system) .. {
-                    $0.setTitleColor(.black, for: .normal)
-                    $0.setTitle("Continue with Apple", for: .normal)
-                    $0.backgroundColor = .white
-                    $0.height(50)
-                    $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
-                    $0.layer.cornerRadius = 10
-                }
-            }
-            
+            cardStatistics
+                .size(height: 100)
+                .radius(10)
+                .border(0.5)
+                .background(color: .white)
+
             UISpacer()
-            
-            UILabel() .. {
-                $0.text = "All rights reserved 2023."
-                $0.textAlignment = .center
-                $0.textColor = .gray.withAlphaComponent(0.5)
-                $0.font = .systemFont(ofSize: 14)
-            }
         }
         .padding(.top(24), .horizontal(16))
         .. {
-            $0.backgroundColor = .gray.withAlphaComponent(0.1)
+            $0.backgroundColor = .blue.withAlphaComponent(0.03)
         }
     }
     
